@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>HTML Academy: pink</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+  <div class="background-container">
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a href="" class="page-header__logo-link"><img src="img/logotype-white-mobile.svg" alt="Pink"></a>
+      </div>
+      <nav class="main-nav">
+        <a href="" class="main-nav__toggle main-nav__toggle--close"><img src="img/menu-burger.png"></a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a href="#">Информация</a></li>
+          <li class="main-nav__item"><a href="#">Возможности</a></li>
+          <li class="main-nav__item"><a href="#">Отзывы</a></li>
+          <li class="main-nav__item"><a href="#">Стоимость</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="page-title-wrap">
+      <h1 class="page-title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+    </div>
+  </div>
+
+  <div class="form">
+      <p class="form__desc">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <form action="">
+          <div class="form-name">
+            <div class="wrap-inner">
+              <div>
+                  <label for="firstname" class="form-label form-label--name">Имя:*</label>
+                  <input class="form-name__input" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя" required>
+              </div>
+              <div>
+                  <label for="lastname" class="form-label form-label--name">Фамилия:*</label>
+                  <input class="form-name__input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию" required>
+              </div>
+              <div>
+                  <label for="middlename" class="form-label form-label--name">Отчество:</label>
+                  <input class="form-name__input" type="text" name="midlename" id="middlename" placeholder="Ну и отчество тоже" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-platform">
+           <div class="wrap-inner">
+             <h3 class="title title--platform">С каким приложением путешествовали?*</h3>
+             <div class="platform-item">
+               <label><input class="platform-input" type="radio" id="ios" name="platform">Pink для iOS</label>
+             </div>
+             <div class="platform-item">
+               <label><input class="platform-input" type="radio" id="android" name="platform">Pink для Android</label>
+             </div>
+             <div class="platform-item">
+               <label><input class="platform-input" type="radio" id="winph" name="platform">Windows Phone</label>
+             </div>
+            </div>
+          </div>
+          <div class="trip-info">
+           <div class="wrap-inner">
+                  <h3 class="title title--trip">Когда вы путешествовали?*</h3>
+              <div class="trip-item">
+                  <input class="trip-input" type="text" name="departdate" id="departdate" placeholder="1 апреля 2015">
+                  <h3><label class="form-label form-label--trip" for="departdate">Дата выезда</label></h3>
+              </div>
+              <div class="trip-item">
+                  <input class="input-num input-num--trip" type="text" name="contin" id="contin" placeholder="10 дней">
+                  <h3><label class="form-label form-label--trip" for="contin">Продолжительность</label></h3>
+              </div>
+              <div class="trip-item">
+                  <input class="trip-input" type="text" name="arrivaldate" id="arrivaldate" placeholder="1 апреля 2015">
+                  <h3><label class="form-label form-label--trip" for="arrivaldate">Дата возвращения</label></h3>
+              </div>
+            </div>
+          </div>
+          <div class="companion-info">
+            <div class="wrap-inner">
+              <div class="companion-num">
+                  <h3 class="title title--companion">Количество попутчиков*</h3>
+                  <input class="input-num input-num--companion" type="text" name="comp-number" id="comp-number" placeholder="2 чел">
+              </div>
+              <div class="companion-desc">
+                  <div class="comp-item">
+                      <table>
+                          <tr>
+                              <th class="companion-num-th">№</th>
+                              <th>
+                                  <label  class="form-label form-label--companion" for="name-1">Имя:*</label>
+                              </th>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <p>1</p>
+                              </td>
+                              <td>
+                                  <input type="text" name="name-1" id="name-1" placeholder="Введите ваше имя" required>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th></th>
+                              <th>
+                                  <label class="form-label form-label--companion" for="nickname-1">Прозвище:</label>
+                              </th>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td>
+                                  <input type="text" name="nickname-1" id="nickname-1" placeholder="Ну как же без этого!">
+                              </td>
+                          </tr>
+                      </table>
+                  </div>
+                  <div class="comp-item">
+                      <table>
+                          <tr>
+                              <th class="companion-num-th">№</th>
+                              <th>
+                                  <label class="form-label form-label--companion" for="name-2">Имя:*</label>
+                              </th>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <p>2</p>
+                              </td>
+                              <td>
+                                  <input type="text" name="name-2" id="name-2" placeholder="Введите ваше имя" required>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th></th>
+                              <th>
+                                  <label class="form-label form-label--companion" for="nickname-2">Прозвище:</label>
+                              </th>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td>
+                                  <input type="text" name="nickname-2" id="nickname-2" placeholder="Ну как же без этого!">
+                              </td>
+                          </tr>
+                      </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="achievement">
+            <div class="wrap-inner">
+              <h3 class="title title--achievement">Ваши безбашенные достижения в путешествии</h3>
+              <label>
+                  <input type="checkbox" id="aherk-selfie" checked>
+                  Сделал селфи с акулой
+              </label>
+              <label>
+                  <input type="checkbox" id="beach-burn" checked>
+                  Обгорел на пляже
+              </label>
+              <label>
+                  <input type="checkbox" id="saw-norris">
+                  Видел Чака Норриса
+              </label>
+              <label>
+                  <input type="checkbox" id="souvenir">
+                  Накупил сувениров
+              </label>
+              <label>
+                  <input type="checkbox" id="tower-hold" checked>
+                  Удержал башню
+              </label>
+              <label>
+                  <input type="checkbox" id="hotel-destroy">
+                  Разгромил отель
+              </label>
+            </div>
+          </div>
+          <div class="photos">
+            <div class="wrap-inner">
+              <h3 class="title title--photos">Ваши фотографии из поездки*</h3>
+              <input type="file" id="photo-upload">
+              <div class="images">
+                  <figure class="image">
+                      <img src="" alt="">
+                      <button>Удалить</button>
+                      <p>IMG-1.JPG</p>
+                  </figure>
+                  <figure class="image">
+                      <img src="" alt="">
+                      <button class="del-btn">Удалить</button>
+                      <p>IMG-2.JPG</p>
+                  </figure>
+                  <figure class="image">
+                      <img src="" alt="">
+                      <button class="del-btn">Удалить</button>
+                      <p>IMG-3.JPG</p>
+                  </figure>
+                  <figure class="image">
+                      <img src="" alt="">
+                      <button class="del-btn">Удалить</button>
+                      <p>IMG-4.JPG</p>
+                  </figure>
+                  <figure class="image">
+                      <img src="" alt="">
+                      <button class="del-btn">Удалить</button>
+                      <p>IMG-5.JPG</p>
+                  </figure>
+                  <figure class="image">
+                      <img src="" alt="">
+                      <button class="del-btn">Удалить</button>
+                      <p>IMG-6.JPG</p>
+                  </figure>
+                  <figure class="image">
+                      <img src="" alt="">
+                      <button class="del-btn">Удалить</button>
+                      <p>IMG-7.JPG</p>
+                  </figure>
+                  <figure class="image">
+                      <img src="" alt="">
+                      <button class="del-btn">Удалить</button>
+                      <p>IMG-8.JPG</p>
+                  </figure>
+              </div>
+            </div>
+          </div>
+          <div class="form-submit">
+            <div class="wrap-inner">		
+              <button class="submit-btn" type="submit" id="submit-btn">Отправить форму</button>
+              <p class="form-submit-note">* - обязательные поля</p>
+            </div>
+          </div>
+      </form>
+  </div>
+
+	<footer class="page-footer">
+		<a href="" class="page-footer__logo-link"></a>
+		<div class="social">
+			<a href="" class="social__icon social__icon--twitter"></a>
+			<a href="" class="social__icon social__icon--facebook"></a>
+			<a href="" class="social__icon social__icon--youtube"></a>
+		</div>
+		<div class="copyright">
+			Разработано <a href="" class="copyright__htmlacademy"><img src="" alt=""></a>
+		</div>
+	</footer>
+
+</body>
+</html>
+

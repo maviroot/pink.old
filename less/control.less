@@ -1,0 +1,30 @@
+.control {
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.control-btn {
+    
+  a {
+    display: inline-block;
+    .uppercase();
+    .nonedecoration();
+    color: @btn_color;
+    font-size: @btn-font;
+    font-weight: @weight_bold;
+    line-height: @btn-line-height;
+    padding: 21px 33px;
+    border: 2px solid @border_color;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+
+
+&--big { 
+    a {
+      padding: 21px 60px;
+    }
+  }
+}

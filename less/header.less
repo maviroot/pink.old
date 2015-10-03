@@ -1,0 +1,33 @@
+.background-container {
+  background: url(../img/background-mobile@1x.jpg) 50% 50% no-repeat;
+  background-size: cover; 
+}
+
+.page-header {
+  background: @header-bg;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav {
+  
+  &__list {
+    display: none;
+  }
+}
+
+.view-call {
+  background: url(../img/iphone-hand-mobile.png) 0 100% no-repeat;
+  
+  &__title {
+    .page-title--font();
+    padding: 25px 50px 30px;
+    padding-bottom: 300px;
+  }
+}
+
+.page-title {
+  .page-title--font();
+  padding: 35px 0 45px;
+}
